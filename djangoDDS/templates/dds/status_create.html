@@ -1,0 +1,17 @@
+{% extends 'dds/base.html' %}
+{% load rest_framework %}
+
+{% block title %}Добавить статус{% endblock %}
+
+{% block content %}
+<h1>Добавить статус</h1>
+
+<form method="post" novalidate>
+    {% csrf_token %}
+    {% render_form serializer %}
+
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+    <a href="{% url 'status_list' %}" class="btn btn-secondary ms-2">Отмена</a>
+</form>
+{% endblock %}
+

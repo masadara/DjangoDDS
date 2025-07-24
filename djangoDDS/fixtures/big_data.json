@@ -1,0 +1,317 @@
+[
+  {
+    "model": "djangoDDS.status",
+    "pk": 1,
+    "fields": {"name": "Бизнес"}
+  },
+  {
+    "model": "djangoDDS.status",
+    "pk": 2,
+    "fields": {"name": "Личное"}
+  },
+  {
+    "model": "djangoDDS.status",
+    "pk": 3,
+    "fields": {"name": "Налог"}
+  },
+  {
+    "model": "djangoDDS.type",
+    "pk": 1,
+    "fields": {"name": "Пополнение"}
+  },
+  {
+    "model": "djangoDDS.type",
+    "pk": 2,
+    "fields": {"name": "Списание"}
+  },
+  {
+    "model": "djangoDDS.category",
+    "pk": 1,
+    "fields": {"name": "Инфраструктура", "type": 1}
+  },
+  {
+    "model": "djangoDDS.category",
+    "pk": 2,
+    "fields": {"name": "Маркетинг", "type": 2}
+  },
+  {
+    "model": "djangoDDS.subcategory",
+    "pk": 1,
+    "fields": {"name": "VPS", "category": 1}
+  },
+  {
+    "model": "djangoDDS.subcategory",
+    "pk": 2,
+    "fields": {"name": "Proxy", "category": 1}
+  },
+  {
+    "model": "djangoDDS.subcategory",
+    "pk": 3,
+    "fields": {"name": "Farpost", "category": 2}
+  },
+  {
+    "model": "djangoDDS.subcategory",
+    "pk": 4,
+    "fields": {"name": "Avito", "category": 2}
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 1,
+    "fields": {
+      "created_at": "2025-01-01",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 1,
+      "amount": "1000.00",
+      "comment": "Первое пополнение"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 2,
+    "fields": {
+      "created_at": "2025-01-05",
+      "status": 2,
+      "type": 2,
+      "category": 2,
+      "subcategory": 4,
+      "amount": "1500.50",
+      "comment": "Расход на Avito"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 3,
+    "fields": {
+      "created_at": "2025-02-15",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 2,
+      "amount": "2000.00",
+      "comment": "Пополнение Proxy"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 4,
+    "fields": {
+      "created_at": "2025-03-01",
+      "status": 3,
+      "type": 2,
+      "category": 2,
+      "subcategory": 3,
+      "amount": "500.00",
+      "comment": "Налоговый расход Farpost"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 5,
+    "fields": {
+      "created_at": "2025-04-10",
+      "status": 2,
+      "type": 2,
+      "category": 2,
+      "subcategory": 4,
+      "amount": "800.00",
+      "comment": "Маркетинг Avito"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 6,
+    "fields": {
+      "created_at": "2025-05-20",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 1,
+      "amount": "1200.00",
+      "comment": "Пополнение VPS"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 7,
+    "fields": {
+      "created_at": "2025-06-05",
+      "status": 2,
+      "type": 2,
+      "category": 1,
+      "subcategory": 2,
+      "amount": "450.00",
+      "comment": "Расход Proxy"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 8,
+    "fields": {
+      "created_at": "2025-06-15",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 1,
+      "amount": "1500.00",
+      "comment": "VPS пополнение"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 9,
+    "fields": {
+      "created_at": "2025-07-01",
+      "status": 3,
+      "type": 2,
+      "category": 2,
+      "subcategory": 3,
+      "amount": "700.00",
+      "comment": "Налог Farpost"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 10,
+    "fields": {
+      "created_at": "2025-07-10",
+      "status": 2,
+      "type": 2,
+      "category": 2,
+      "subcategory": 4,
+      "amount": "650.00",
+      "comment": "Расход на Avito"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 11,
+    "fields": {
+      "created_at": "2025-07-15",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 2,
+      "amount": "1100.00",
+      "comment": "Пополнение Proxy"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 12,
+    "fields": {
+      "created_at": "2025-07-20",
+      "status": 3,
+      "type": 2,
+      "category": 2,
+      "subcategory": 3,
+      "amount": "300.00",
+      "comment": "Налог"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 13,
+    "fields": {
+      "created_at": "2025-07-21",
+      "status": 2,
+      "type": 2,
+      "category": 2,
+      "subcategory": 4,
+      "amount": "950.00",
+      "comment": "Реклама Avito"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 14,
+    "fields": {
+      "created_at": "2025-07-22",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 1,
+      "amount": "1750.00",
+      "comment": "Пополнение VPS"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 15,
+    "fields": {
+      "created_at": "2025-07-23",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 2,
+      "amount": "2200.00",
+      "comment": "Пополнение Proxy"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 16,
+    "fields": {
+      "created_at": "2025-07-23",
+      "status": 2,
+      "type": 2,
+      "category": 2,
+      "subcategory": 4,
+      "amount": "1300.00",
+      "comment": "Расход по Avito"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 17,
+    "fields": {
+      "created_at": "2025-07-23",
+      "status": 3,
+      "type": 2,
+      "category": 2,
+      "subcategory": 3,
+      "amount": "400.00",
+      "comment": "Оплата налогов"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 18,
+    "fields": {
+      "created_at": "2025-07-23",
+      "status": 1,
+      "type": 1,
+      "category": 1,
+      "subcategory": 1,
+      "amount": "3000.00",
+      "comment": "Крупное пополнение"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 19,
+    "fields": {
+      "created_at": "2025-07-23",
+      "status": 2,
+      "type": 2,
+      "category": 1,
+      "subcategory": 2,
+      "amount": "600.00",
+      "comment": "Мелкий расход Proxy"
+    }
+  },
+  {
+    "model": "djangoDDS.cashflowrecord",
+    "pk": 20,
+    "fields": {
+      "created_at": "2025-07-23",
+      "status": 2,
+      "type": 2,
+      "category": 2,
+      "subcategory": 3,
+      "amount": "750.00",
+      "comment": "Маркетинговые расходы Farpost"
+    }
+  }
+]

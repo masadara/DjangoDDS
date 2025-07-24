@@ -1,0 +1,32 @@
+{% extends 'dds/base.html' %}
+{% block title %}Категории{% endblock %}
+
+{% block content %}
+<h1>Категории</h1>
+
+<a href="{% url 'category_create' %}" class="btn btn-success mb-3">Добавить категорию</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Тип</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for category in objects %}
+        <tr>
+            <td>{{ category.name }}</td>
+            <td>{{ category.type.name }}</td>
+            <td>
+                <a href="{% url 'category_detail' category.pk %}" class="btn btn-sm btn-primary">Просмотр</a>
+                <a href="{% url 'category_delete' category.pk %}" class="btn btn-sm btn-danger">Удалить</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="3" class="text-center">Категорий нет</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

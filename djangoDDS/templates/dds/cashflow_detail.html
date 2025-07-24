@@ -1,0 +1,20 @@
+{% extends 'dds/base.html' %}
+{% block title %}Запись от {{ obj.created_at|date:"d.m.Y" }}{% endblock %}
+
+{% block content %}
+<h1>Движение денежных средств</h1>
+<ul class="list-group">
+    <li class="list-group-item"><strong>Дата:</strong> {{ obj.created_at|date:"d.m.Y" }}</li>
+    <li class="list-group-item"><strong>Статус:</strong> {{ obj.status.name }}</li>
+    <li class="list-group-item"><strong>Тип:</strong> {{ obj.type.name }}</li>
+    <li class="list-group-item"><strong>Категория:</strong> {{ obj.category.name }}</li>
+    <li class="list-group-item"><strong>Подкатегория:</strong> {{ obj.subcategory.name }}</li>
+    <li class="list-group-item"><strong>Сумма:</strong> {{ obj.amount }}</li>
+    <li class="list-group-item"><strong>Комментарий:</strong> {{ obj.comment }}</li>
+</ul>
+
+<a href="{% url 'cashflow_list' %}" class="btn btn-secondary mt-3">Назад</a>
+<a href="{% url 'cashflow_update' obj.pk %}" class="btn btn-primary mt-3 ms-2">Редактировать</a>
+<a href="{% url 'cashflow_delete' obj.pk %}" class="btn btn-danger mt-3 ms-2">Удалить</a>
+{% endblock %}
+

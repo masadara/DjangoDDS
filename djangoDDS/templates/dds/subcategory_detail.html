@@ -1,0 +1,10 @@
+{% extends 'dds/base.html' %}
+{% block title %}Подкатегория: {{ obj.name }}{% endblock %}
+
+{% block content %}
+<h1>Подкатегория: {{ obj.name }}</h1>
+<p><strong>Категория:</strong> {{ obj.category.name }}</p>
+
+<a href="{% url 'subcategory_list' %}" class="btn btn-secondary">Назад</a>
+<a href="{% url 'subcategory_delete' obj.pk %}" class="btn btn-danger">Удалить</a>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'dds/base.html' %}
+{% block title %}Удалить категорию{% endblock %}
+
+{% block content %}
+<h1>Удалить категорию</h1>
+<p>Вы уверены, что хотите удалить категорию <strong>{{ obj.name }}</strong>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Удалить</button>
+    <a href="{% url 'category_list' %}" class="btn btn-secondary ms-2">Отмена</a>
+</form>
+{% endblock %}
+
+
