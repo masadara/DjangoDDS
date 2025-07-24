@@ -8,7 +8,7 @@ https://drive.google.com/file/d/1vbPk2aiMe52pDFW57zMUDMaW7rqrHypc/view
 
 1. Клонируйте репозиторий:
 ```
-git clone https://github.com/masadara/project2
+git clone https://github.com/masadara/DjangoDDS
 ```
 2. Установите зависимости:
 ```
