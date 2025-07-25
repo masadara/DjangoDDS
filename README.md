@@ -22,7 +22,6 @@ https://drive.google.com/file/d/1vbPk2aiMe52pDFW57zMUDMaW7rqrHypc/view
 4. Создайте и примените миграции
 
 ```
-    python manage.py makemigrations
     python manage.py migrate
 ```
 
