@@ -9,6 +9,8 @@ https://drive.google.com/file/d/1vbPk2aiMe52pDFW57zMUDMaW7rqrHypc/view
 
 ## Как запустить проект:
 
+Команды нужно выполнять из папки с проектом.
+
 1. Клонируйте репозиторий:
 ```
     git clone https://github.com/masadara/DjangoDDS
@@ -19,7 +21,7 @@ https://drive.google.com/file/d/1vbPk2aiMe52pDFW57zMUDMaW7rqrHypc/view
 ```
 3. Создайте и заполните данными файл <b>.env</b> по примеру <b>.env.sample</b>
 
-4. Создайте и примените миграции
+4. Примените миграции
 
 ```
     python manage.py migrate
